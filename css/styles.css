@@ -1,0 +1,254 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  /* font-weight: normal; */
+  /* margin-top: 56px; */
+  background-color: #fff;
+  /* color: #000000; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1040px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  padding-top: 50px;
+  background-color: #fff;
+}
+
+.container-site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: auto;
+}
+
+.sitenav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.sitenav-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: grey;
+}
+
+.sitenav-link::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.sitenav-link:hover {
+  color: #000;
+}
+.sitenav-link:hover::after {
+  background-color: grey;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.site-demo {
+  padding-top: 160px;
+  padding-bottom: 210px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("../img/watches.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 600px) center;
+}
+
+.site-demo-title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 55px;
+}
+
+.site-demo-discription {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  border-left: 2px solid grey;
+  color: grey;
+}
+
+.site-demo-button {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.6);
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-demo-button:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.about-watch {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.about-watch-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.about-watch-item {
+  width: 300px;
+}
+
+.about-watch-title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.about-watch-discription {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.decoration-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 35px;
+}
+
+.decoration.item {
+  width: 5px;
+  height: 5px;
+  background-color: #ccc;
+}
+
+.about-watch-link {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.about-watch-link::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: red;
+  background-position: center center;
+  transition: width 0.3s ease;
+}
+
+.about-watch-link:hover::before {
+  width: 40px;
+}
+
+.container-buy-watch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.site-demo-buy {
+  width: 50%;
+  padding-right: 70px;
+}
+
+.site-demo-discription-img {
+  vertical-align: middle;
+  width: 400px;
+  height: 600px;
+}
+
+.footer {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer-section {
+  margin: 0;
+  margin-left: auto;
+  max-width: 405px;
+  color: #fff;
+}
+
+.footer-section-discription {
+  border-left: 2px solid #fff;
+  color: #fff;
+}
